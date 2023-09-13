@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tabbed Panel with Buttons</title>
+	<style>
+	/* Style for the tabbed panel */
+	.tab {
+		overflow: hidden;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+	}
+
+	/* Style for the buttons in the tabbed panel */
+	.tab button {
+		background-color: inherit;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+	}
+
+	/* Active button style */
+	.tab button.active {
+		background-color: #ccc;
+	}
+
+	/* Style for the panel content */
+	.tabcontent {
+		display: none;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		border-top: none;
+	}
+	</style>
+</head>
+<body>
+
+	<!-- Tabbed Panel -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'Panel1')" id="defaultOpen">Panel 1</button>
+		<button class="tablinks" onclick="openTab(event, 'Panel2')">Panel 2</button>
+		<button class="tablinks" onclick="openTab(event, 'Panel3')">Panel 3</button>
+	</div>
+
+	<!-- Tabbed Panel Content -->
+	<div id="Panel1" class="tabcontent">
+		<h3>Panel 1</h3>
+		<!-- Buttons for Panel 1 -->
+		<button>Button 1</button>
+		<button>Button 2</button>
+		<button>Button 3</button>
+		<button>Button 4</button>
+		<button>Button 5</button>
+		<button>Button 6</button>
+	</div>
+
+	<div id="Panel2" class="tabcontent">
+		<h3>Panel 2</h3>
+		<!-- Buttons for Panel 2 -->
+		<button>Button 1</button>
+		<button>Button 2</button>
+		<button>Button 3</button>
+		<button>Button 4</button>
+		<button>Button 5</button>
+		<button>Button 6</button>
+	</div>
+
+	<div id="Panel3" class="tabcontent">
+		<h3>Panel 3</h3>
+		<!-- Buttons for Panel 3 -->
+		<button>Button 1</button>
+		<button>Button 2</button>
+		<button>Button 3</button>
+		<button>Button 4</button>
+		<button>Button 5</button>
+		<button>Button 6</button>
+	</div>
+
+	<script>
+		// Function to open the tabbed panel
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className
+			+= " active";
+		}
+		// Set the default tab to be opened
+		document.getElementById("defaultOpen").click();
+	</script>
+</body>
+</html>

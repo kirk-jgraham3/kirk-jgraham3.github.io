@@ -1,0 +1,86 @@
+body{
+    font-family: 'Press Start 2P', 'Regular 400';
+    background-color: black;
+
+    background-image: url("brunner50.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.landwrap, .wrapper{
+    display:grid;
+
+    grid-template-columns: 25% 3% 72%;
+    padding:0;
+    margin:0;
+}
+.head {
+    grid-column: 1/span 2;
+    padding: 5%;
+    margin: 0%;
+    float: left;
+    color: white;
+
+    display: inline-flex;
+    flex-direction: column;
+}
+.blurb {
+    background-image: radial-gradient(circle at center, rgba(0,0,0,0.5), rgba(0,0,0,1));
+    grid-column: 3;
+    grid-row: 2;
+    margin: 1%;
+    padding: 2%;
+    align-self: center;
+    text-align: center;
+}
+.bodyLand{
+    grid-row-start: 2;
+    grid-column: 1/ span 3;
+}
+.body{
+    grid-column: 2/ span 2;
+    margin: 1%;
+    padding: 2%;
+    align-self: center;
+    text-align: center;
+}
+.menu{
+    margin:5%;
+    padding: 3%;
+    align-self: stretch;
+    color: white;
+    grid-row: 2;
+    grid-column: 1;
+    display: inline-flex;
+    flex-direction: column;
+}
+#pg_name{
+    align-self: left;
+    /*border: 1px solid white;*/
+    text-align: left;
+}
+#banner_img{
+    display: none;
+}
+#pic{
+    align-self: center;
+    width: 20%;
+    height: auto;
+    padding: 0%;
+}
+a{
+    padding: 1%;
+    text-align: left;
+    color: white;
+}
+a:hover{
+    opacity: 50%;
+    font-size: 105%;
+}
+.bottom_margin{
+    grid-row: 3;
+    grid-column: 1 /span 3;
+    text-align: center;
+}

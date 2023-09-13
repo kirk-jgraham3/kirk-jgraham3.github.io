@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Technical Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link id="mainStyle" rel="stylesheet" type="text/css" href="style.css"></slink>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="head">
+                <h1 id="pg_name">Technical Portfolio</h1>
+            </div>
+
+            <div class="menu">
+                <a id="tab_link" href="index.html">Landing</a>               
+                <a id="tab_link" href="technical.html">Technical</a>
+                <a id="tab_link" href="qualifications.html">Qualifications</a>
+                <a id="tab_link" href="service.html">Service</a>
+                <!-- <a id="tab_link" href="ai.html">AI</a> -->
+            </div>
+
+            <div class="body">
+
+                <div class="blurb">
+                    <p>
+                        Like many of my peers, I have a handful of lab-assigned and personal coding projects. 
+                        My new 
+                        <a href="https://github.com/kirk-jgraham3" target="_blank" rel="noopener noreferrer">GitHub</a> 
+                        is not currently hosting many publicly available projects, but that will change in the coming months.
+                        <hr>
+                    </p>
+                    <p style="text-align: left;">
+                        Maze Maker (<a href=https://github.com/kirk-jgraham3/Binary-Maze-Maker/releases/tag/v1.0.0 target="_blank" rel="noopener noreferrer">Git Release v1.0.0</a>) 
+                        - Command line Python program that generates playable Mazes stored in efficient binary files. 
+                        The project currently implements either Kruskal's or DFS (user's choice) for the maze generation. 
+                        There is an Algorithm that finds the most efficient path through the maze by implementing an A* Search. 
+                        The link contains documentation regarding use of the project.
+                    </p>
+                    <img id="gif" src="maze-ai.jpg"/>
+                    <hr>
+                    <p style="text-align: left;">
+                        RaspberryPi 4 - 
+                        I have moderate skill with RaspBerry Pi. 
+                        This is largely due to a gravitation towards technical projects that immediately improve or 
+                        solve a small issue in my day to day. 
+                        This past year my RasPi has been incarnated as a(n):
+                        <ul style="text-align: left;">
+                            <li>Minecraft Server</li>
+                            <li>secondary Manjaro desktop</li>
+                            <li>Ubuntu Server</li>
+                            <li>controller for my 3D Printer 
+                                (<a href="https://octoprint.org/" target="_blank" rel="noopener noreferrer">OctoPrint</a>)</li>
+                        </ul>
+                    </p>
+                    <img id="pic" src="octoPrint.jpg" style="width: 20%;"/>
+                    <hr>
+                    <p style="text-align: left;">
+                        3D Printing and <a href="https://www.thingiverse.com/kirkg3/designs" target="_blank" rel="noopener noreferrer">Thingiverse</a> - 
+                        Speaking of 3D Printing, my skills are not limited to coding. 
+                        I designed a handful of my own models in SolidWorks. 
+                        Each of these required quite a bit of prototyping, precision measurements, and sketching. 
+                        The few designs I have shared publicly have garnered hundreds of views and approximately 20% download rate in total.
+                    </p>
+                    <img id="pic" src="preview.png" style="width: 40%;"/>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom_margin">
+            <div class="container">
+                <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
+            </div>
+        </div>
+        <script src="functions.js"></script>
+    </body>
+</html>

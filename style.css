@@ -1,0 +1,116 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: maroon;
+}
+a:hover {
+    font-size: 115%;
+    transition: ease-in-out 0.25;
+}
+
+.wrapper {
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 17% 83%;
+}
+
+.head {
+    padding: 2%;
+    grid-column: 1/ span 2;
+    background: maroon;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.blurb {
+    margin: 1%;
+    border: 5px dashed maroon;
+    padding: 2%;
+    text-align: center;
+}
+
+.body,
+.bodyLand {
+    margin: 1%;
+    background-color: silver;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    padding: 3%;
+    margin: 1%;
+    background: maroon;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    border: 3px solid black;
+    flex-direction: column;
+}
+.bodyLand .menu {
+    width: 40%;
+}
+
+#pg_name {
+    align-self: left;
+    /*border: 1px solid white;*/
+    text-align: left;
+    text-indent: 5%;
+}
+
+#banner_img,
+#pic {
+    align-self: center;
+    width: 20%;
+    height: auto;
+    padding: 0%;
+}
+
+#my_name {
+    margin: 1%;
+    align-self: center;
+    text-align: center;
+}
+
+#email_link {
+    padding: 1%;
+    text-align: center;
+    color: white;
+}
+
+#tab_link {
+    padding: 3%;
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    font-family: monospace;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#tab_link:hover {
+    background-color: white;
+    font-size: 200%;
+    color: maroon;
+    transition: ease-in-out 0.25s;
+}
+
+.blue_overline_text {
+    color: blue;
+    text-decoration: overline;
+}
+
+#red_underline_text {
+    color: red;
+    text-decoration: underline;
+}
+
+.bottom_margin {
+    text-align: center;
+}
